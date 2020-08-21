@@ -8,7 +8,7 @@ function Body(props) {
             <tr>
                 <td className="border-right">{employee.fName}</td>
                 <td className="border-right">{employee.lName}</td>
-                <td className="border-right">{employee.position}</td>
+                <td className="border-right">{employee.phone}</td>
                 <td className="border-right">{employee.email}</td>
                 <td className="border-right">
                     <img src={employee.thumbnail} alt='employeePicture' />
