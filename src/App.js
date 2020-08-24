@@ -1,10 +1,19 @@
 import React from 'react';
-import './App.css';
+import Main from './components/Main';
+import Jumbotron from './components/Jumbotron';
+
 
 function App() {
   return (
-    <div className="App">
-
+    <div>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <Jumbotron />
+          </div>
+          <Main />
+        </div>
+      </div>
     </div>
   );
 }
