@@ -1,27 +1,16 @@
-import React from 'react'
+import React, { useContext } from "react";
+import "../style/Style.css";
+import Row from "./Row"
 
-function Body(props) {
-
-    const { employees } = props.employees;
-    const empInfo = employees.map(employee => {
-        return (
-            <tr>
-                <td className="border-right">{employee.fName}</td>
-                <td className="border-right">{employee.lName}</td>
-                <td className="border-right">{employee.phone}</td>
-                <td className="border-right">{employee.email}</td>
-                <td className="border-right">
-                    <img src={employee.thumbnail} alt='employeePicture' />
-                </td>
-            </tr>
-        )
-    })
-
+function Body() {
+    const { empData } = useContext(EmpContext);
     return (
-        <div>
-            <tbody>{empInfo}</tbody>
-        </div>
+        <tbody className="">
+            {empData.length >= 1 ? empData.map(empRec => (
+                <Row empData={empRec} />
+            )) : <tr></tr>}
+        </tbody>
     )
-}
+};
 
-export default Body
+export default Body;
