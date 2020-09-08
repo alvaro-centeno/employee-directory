@@ -1,0 +1,28 @@
+.nav {
+  font-size: 3em;
+  color: #efeef5 !important;
+  background-image: url('https://i0.wp.com/inverse-square.com/wp-content/uploads/2015/05/SoftwareCodeOwner_Blog_1920x1080.jpg?fit=1920%2C1080&ssl=1');
+  ;
+}
+
+.tableFixHead { 
+overflow-y: auto; 
+height: 88vh; 
+}
+
+.tableFixHead thead th { 
+position: sticky; 
+top: 0; 
+}
+
+th { 
+background:rgb(192, 114, 114); 
+}
+
+.disp-true{
+display: initial;
+}
+
+.disp-false{
+display: none;
+}
