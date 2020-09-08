@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import "../style/Style.css";
-import EmployeeContext from "./utils/empContext";
+import EmployeeContext from "./utils/EmpContext";
 
 function Column(props) {
     const [filterSwitch, setFilterSwitch] = useState(false);

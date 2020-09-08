@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Nav from "../Nav";
 import Table from "../Table";
 import "../../style/Style.css";
-import EmployeeContext from "../utils/empContext";
+import EmployeeContext from "../utils/EmpContext";
 import EmpInfo from "../utils/EmployeeInfo";
 
 function Main() {
